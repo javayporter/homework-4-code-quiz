@@ -9,8 +9,28 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1>View Highscores</h1>
+      <h1>Coding Quiz Challenge</h1>
+      <p id="instructions">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds.</p>
+      <button id="start">Start Quiz</button>
     </div>
+    <!--Containters-->
+    <div id="containter">
+      <div id="question-container" class="hide" display="none"> 
+        <div id="question">Question</div>
+        <div id="answer-btns" class="btn-grid">
+          <button>A</button>
+          <button>B</button>
+          <button>C</button>
+          <button>D</button>
+        </div> 
+      </div>
+    </div>
+    <!--Timer-->
+    <div>
+      Time Remaining <span id="timer">75<span> seconds
+  </div>
+  
     <script src="./script.js"></script>
   </body>
 </html>
+
