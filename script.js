@@ -1,10 +1,12 @@
 //Define Variables
-var hide = document.getElementById("question-container").style.display = "none";
+var hideQuestionContainer = document.getElementById("question-container").style.display = "none";
+var questionContainerEl = document.getElementById("question"
+);
 var questions = [
     {
-       questionText: "My first question?",
-       answers: ["A1", "A2", "A3", "A4"],
-       correctIndex: 0
+       questionText: "Commonly used data types DO NOT include:",
+       answers: ["strings", "booleans", "alerts", "numbers"],
+       correctIndex: 3
     },
     {
        questionText: "My first question 2?",
@@ -66,7 +68,25 @@ function startTimer(){
 //Display Quiz Question
 function displayQuestion() {
     document.getElementById("question-container").style.display = "block";
+    questionContainerEl.innerHTML = questions[0].questionText
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
